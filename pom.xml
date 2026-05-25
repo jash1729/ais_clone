@@ -25,13 +25,6 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
-	<modules>
-		<module>asint_ais_backend</module>
-		<module>asint_ais_event_layer</module>
-		<!-- <module>asint_ais_integration_test</module> -->
-        <module>asint_ais_performance_test</module>
-	</modules>
-
 	<dependencyManagement>
 		<dependencies>
 			<!-- CDS SERVICES -->
