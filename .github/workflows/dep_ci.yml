@@ -27,7 +27,7 @@ jobs:
 
       - uses: step-security/harden-runner@v2
         with:
-          egress-policy: block
+          egress-policy: audit
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
