@@ -35,5 +35,5 @@ jobs:
       - uses: actions/checkout@v4
 
       # Runs a build command
-      - name: Build
-        run: mvn clean package
+      - name: Download dependencies only
+        run: mvn dependency:go-offline
