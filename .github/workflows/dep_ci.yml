@@ -22,10 +22,14 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-
-      - uses: step-security/harden-runner@v2
+      - name: Harden Runner
+        uses: step-security/harden-runner@fa2e9d605c4eeb9fcad4c99c224cee0c6c7f3594 # v2.16.0
         with:
-          egress-policy: audit
+          egress-policy: block
+          allowed-endpoints: >
+              github.com:443
+              hosted-compute-watchdog-prod-iad-01.githubapp.com:443
+              repo.maven.apache.org:443
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
