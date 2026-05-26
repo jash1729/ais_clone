@@ -27,10 +27,18 @@ jobs:
         with:
           egress-policy: block
           allowed-endpoints: |
-              github.com:443
-              hosted-compute-watchdog-prod-iad-01.githubapp.com:443
-              repo.maven.apache.org:443
-
+            github.com:443
+            api.github.com:443
+            objects.githubusercontent.com:443
+            hosted-compute-watchdog-prod-iad-01.githubapp.com:443
+            registry.npmjs.org:443
+            nodejs.org:443
+            repo.maven.apache.org:443
+            deb.debian.org:443
+            security.ubuntu.com:443
+            archive.ubuntu.com:443
+            uploads.github.com:443
+            
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo security runnner complete
