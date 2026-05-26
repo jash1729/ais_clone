@@ -55,6 +55,8 @@ jobs:
           java-version: 17
           cache: maven
 
+      - run: java -version
+
       # Runs a build command
-      - name: Download dependencies only
-        run: mvn dependency:go-offline
+      #- name: Download dependencies only
+      #  run: mvn dependency:go-offline
